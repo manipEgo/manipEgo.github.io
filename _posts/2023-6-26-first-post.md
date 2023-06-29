@@ -1,6 +1,7 @@
 ---
 title: Fist Post
 tags: others
+type: article
 pageview: true
 key: first-post
 ---
