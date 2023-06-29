@@ -1,7 +1,7 @@
 ---
 title: Fist Post
 tags: others
-pageview:
+pageview: true
   provider: leancloud
   leancloud:
     app_id    : "pqBFdLxVgkk56faMWu64l7Lo-MdYXbMMI"
