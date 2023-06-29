@@ -2,6 +2,7 @@
 title: Fist Post
 tags: others
 pageview: true
+key: first-post
 ---
 
 ```
