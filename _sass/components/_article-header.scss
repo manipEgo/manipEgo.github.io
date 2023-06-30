@@ -47,4 +47,9 @@
 
 .article__header--cover {
   width: 100%;
+  max-width: map-get($layout, content-max-width) + map-get($layout, aside-width);;
+  display: block;
+  margin: 0 auto;
+  mask-image: linear-gradient(0deg, transparent, #fff);
+  -webkit-mask-image: linear-gradient(0deg, transparent, #fff);
 }
