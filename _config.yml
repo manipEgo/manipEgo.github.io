@@ -68,6 +68,13 @@ paths:
   rss     : # "/feed.xml" (default)
 
 
+## => Collections
+##############################
+collections:
+  talks:
+    output: true
+
+
 ## => Post
 ##############################
 ## excerpt
@@ -200,6 +207,16 @@ defaults:
       show_edit_on_github: true
       show_subscribe: true
       pageview: true
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: article
+      sharing: false
+      license: false
+      show_edit_on_github: false
+      show_subscribe: false
+      pageview: false
 
 
 ## => Plugins
