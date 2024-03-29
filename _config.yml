@@ -136,7 +136,7 @@ comments:
   gitalk:
     clientID    : 106086b6070c33333bad # GitHub Application Client ID
     clientSecret: 20378ae345a485c4d518387c7a07d5bc4c740c13 # GitHub Application Client Secret
-    repository  : https://github.com/manipEgo/BlogCommnets # GitHub repo
+    repository  : Blog-Commnets # GitHub repo
     owner       : manipEgo # GitHub repo owner
     admin: # GitHub repo owner and collaborators, only these guys can initialize GitHub issues, IT IS A LIST.
       - manipEgo # - your GitHub Id
