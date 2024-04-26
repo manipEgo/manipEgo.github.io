@@ -19,6 +19,19 @@ aside:
 
 ----------
 
+2024/04/26 更新：
+
+## Tun + exclude-interface / Tun + 排除接口：
+
+> [虚空终端 Docs：配置-入站-Tun](https://wiki.metacubex.one/config/inbound/tun/)。
+
+最近自己也用 Docker 部署了 qibittorrent，所以顺便了解了一下 Dockers 的网络结构，发现绕行 Docker 容器其实非常简单。Docker 默认用桥接模式为每个容器创建一个虚拟网桥，该网桥有独立的虚拟接口和 IP。通过调用指令 `docker inspect <id>` 便可在 `NetworkSettings->Networks->NetworkID` 查看虚拟接口的 ID。然后通过排除网络接口的方式便可以绕行整个容器。这个方法适用于 Tun 模式，对应的配置项为 `tun -> exclude-interface`。redir 模式绕行容器还是下文的方法更方便。
+
+因为众所周知的原因，此处附上的是 `mihomo` 内核而非 `clash` 内核的文档。
+
+----------
+
+
 ## Process-Based Rule / 进程规则
 
 > [Clash Process-Based Rule 文档](https://lancellc.gitbook.io/clash/clash-config-file/rules/process-based-rule)。
